@@ -19,7 +19,7 @@
     
     
     NEW FILE - QPV3.xml
-    -->
+
 <DerivedParameter name="QPV Net" abbreviation="QPV3" xmlns:ns2="group" xmlns:ns3="http://www.example.org/productType">
     <Method name="Multiply">
         <Field abbreviation="QPV1"/>

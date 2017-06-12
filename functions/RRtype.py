@@ -1,4 +1,3 @@
-##
 # 
 #<DerivedParameter unit="dbZ" name="Radar with PType" abbreviation="RRtype" xmlns:ns2="group" xmlns:ns3="http://www.example.org/productType">
 #     <Method levels="Surface" name="RRtype.execute1">
@@ -16,7 +15,7 @@
 #         <Field level="EA" abbreviation="CXR"/>       
 #     </Method>
 # </DerivedParameter>
-##
+
 #
 ####################################
 

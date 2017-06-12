@@ -19,7 +19,7 @@
     
     
     NEW FILE - cTOT.xml
-    -->
+
 <DerivedParameter unit="C" name="Cross Totals" abbreviation="cTOT" xmlns:ns2="group" xmlns:ns3="http://www.example.org/productType">
     <Method levels="Layer" name="Difference">
         <Field level="850MB" abbreviation="DpT"/>

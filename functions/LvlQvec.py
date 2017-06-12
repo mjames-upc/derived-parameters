@@ -1,29 +1,9 @@
-##
-# This software was developed and / or modified by Raytheon Company,
-# pursuant to Contract DG133W-05-CQ-1067 with the US Government.
-# 
-# U.S. EXPORT CONTROLLED TECHNICAL DATA
-# This software product contains export-restricted data whose
-# export/transfer/disclosure is restricted by U.S. law. Dissemination
-# to non-U.S. persons whether in the United States or abroad requires
-# an export license or other authorization.
-# 
-# Contractor Name:        Raytheon Company
-# Contractor Address:     6825 Pine Street, Suite 340
-#                         Mail Stop B8
-#                         Omaha, NE 68106
-#                         402.291.0100
-# 
-# See the AWIPS II Master Rights File ("Master Rights File.pdf") for
-# further licensing information.
-###
-
 from numpy import log, exp
 
 import PartialDerivative as Partial
 import DgeoComps
 import Vector
-##
+
 # Find Q vectors from height, temp, and pressure.
 #
 # @param height: Height (m)
@@ -45,7 +25,7 @@ def execute(GHxSM, TxSM, P, dx, dy, coriolis):
     # convert the results we want to unmasked arrays
     return Vector.componentsTo(result_u, result_v)
   
-##
+
 # Find Q vectors and dtemp/dx and dtemp/dy from height, temp, and pressure.
 # This is an adaptation of slqvect.f. That function had 
 # multiple calls to a smoothing function, but I didn't find 

@@ -1,23 +1,3 @@
-##
-# This software was developed and / or modified by Raytheon Company,
-# pursuant to Contract DG133W-05-CQ-1067 with the US Government.
-#
-# U.S. EXPORT CONTROLLED TECHNICAL DATA
-# This software product contains export-restricted data whose
-# export/transfer/disclosure is restricted by U.S. law. Dissemination
-# to non-U.S. persons whether in the United States or abroad requires
-# an export license or other authorization.
-#
-# Contractor Name:        Raytheon Company
-# Contractor Address:     6825 Pine Street, Suite 340
-#                         Mail Stop B8
-#                         Omaha, NE 68106
-#                         402.291.0100
-#
-# See the AWIPS II Master Rights File ("Master Rights File.pdf") for
-# further licensing information.
-##
-
 #
 # SOFTWARE HISTORY
 #
@@ -48,7 +28,7 @@ c1 = 0.0091379024
 ## @var c2: constant used in multiple functions.
 c2 = 6106.3960
 
-##
+
 # Calculate wet bulb temperature in degrees C
 # from pressure, temperature, and relative humidity.
 #
@@ -86,7 +66,7 @@ def execute2(GH3D, T3D, RH3D, TILT):
     slice = where(slice == 9.99999993e+36, float32(-999999.0), slice)
     return slice
 
-##
+
 # This function takes arrays of values and filters them against expected values
 # for terrestrial weather. Where the dewpoint temperature is greater than the
 # observed temperature or the saturation vapor pressure is below 10 (millibars?),
@@ -126,7 +106,7 @@ def myTW(T, Td, P):
    
     return(TW)
 
-##
+
 # Calculate saturation vapor pressure from T.
 #
 # @param T: Temperature in degrees K
@@ -140,7 +120,7 @@ def calcSatVP(T):
     ew -= c2/T
     return ew
 
-##
+
 # Calculate TW iteratively from the input parameters. This is called 
 # from myTW(); the parameter arrays have already been tested for
 # "reasonable" values. 
@@ -233,7 +213,7 @@ def calcTW(T, Td, P, satVP):
             
     return TW
 
-##
+
 # Calculate the value of the de variable used in calcTW.
 #
 # @param T: The temperature in degrees Kelvin.

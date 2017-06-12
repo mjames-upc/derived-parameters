@@ -26,7 +26,7 @@
     
     
     NEW FILE - QPV2.xml
-    -->
+
 <DerivedParameter unit="K/hPa/s" name="Negative EPV*" abbreviation="QPV2" xmlns:ns2="group" xmlns:ns3="http://www.example.org/productType">
     <Method name="Test">
         <Field abbreviation="MpV"/>

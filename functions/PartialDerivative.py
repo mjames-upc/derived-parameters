@@ -1,29 +1,9 @@
-##
-# This software was developed and / or modified by Raytheon Company,
-# pursuant to Contract DG133W-05-CQ-1067 with the US Government.
-# 
-# U.S. EXPORT CONTROLLED TECHNICAL DATA
-# This software product contains export-restricted data whose
-# export/transfer/disclosure is restricted by U.S. law. Dissemination
-# to non-U.S. persons whether in the United States or abroad requires
-# an export license or other authorization.
-# 
-# Contractor Name:        Raytheon Company
-# Contractor Address:     6825 Pine Street, Suite 340
-#                         Mail Stop B8
-#                         Omaha, NE 68106
-#                         402.291.0100
-# 
-# See the AWIPS II Master Rights File ("Master Rights File.pdf") for
-# further licensing information.
-###
-
 ## @file PartialDerivative.py
 
 from numpy import isscalar
 from numpy import NaN
 
-##
+
 # Calculate d/dx and d/dy of Qty.
 # This method assumes masked arrays as input and returns masked
 # arrays as output. That saves work when the return value would just
@@ -66,7 +46,7 @@ def calculate(Qty, dx, dy):
     
     return (dqdx, dqdy)
     
-##
+
 # Calculate d/dx and d/dy of Qty.
 # This method takes unmasked arrays and returns unmasked arrays.
 #
